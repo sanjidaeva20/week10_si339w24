@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Shadows+Into+Light&family=Sometype+Mono&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function displayInformation () {
+            // Your code goes here. 
+            // Do not change any other code in this file
+            // All of the steps below must be achieved using JavaScript!
+    
+            
+            // 1. Change the h1 element to your name.
+            document.querySelector("#url").innerHTML = "Sanjida";
+
+            
+               
+            // 2. Update the three span elements using ONLY JavaScript
+                
+    
+            // 3. Change the background color and margin for the entire page.
+            document.body.style.backgroundColor = "Gray";
+            document.body.style.margin = "30px";
+                
+        }
+    </script>
+
+    <title>Home</title>
+</head>
+<body onload="displayInformation()">
+    <a class = "skip-link" href = "#main-content">Skip to Main Content</a>
+    <header>
+            <nav>
+                <ul class = "navigation">
+                    <li><a href = "index.html" id="current" class="active">Home</a></li>
+                    <li><a href = "pets.html">Pets</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                </ul>
+            </nav>
+        <h1>This is the home page</h1>
+
+    </header>
+    <main id = "main-content">
+        <div>
+            <h2>Use JavaScript to display the following information here:</h2>
+	        <p>
+                The URL of this page is: <span id = "URL"></span><br/>
+                The number of H2 items for this page: <span id = "items"></span><br/>
+                The current date/time is: <span id = "time"></span><br/>
+            </p>
+
+		    <p oncopy="copyFunction()">Thank you for visiting!</p>
+
+	        
+            <div id="cheer"></div>
+        </div>
+
+        <div>
+            <p>Welcome to [Common Class Project], your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+
+        </div>
+
+<div>Not sure what to put here for now but this page will look cute later, promise</div>
+            
+            <!-- Jackie Wolf -->
+    
+        <div>Pets are cute</div>
+        <div>I want a mainecoon</div>
+        <div>I like to travel</div>
+        <div>Peru is my next travel destination</div>
+    </main>
+    
+</body>
+</html>

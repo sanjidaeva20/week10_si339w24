@@ -1,0 +1,379 @@
+body{
+    font-family: 'Playpen Sans', 'Shadows Into Light', 'Sometype Mono', cursive, monospace;
+    background-color: white;
+    line-height: 1.5; 
+    min-height: 100vh;
+    padding: 1cm;
+}
+
+nav {
+    background:#ded6cf;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}  
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    
+}
+
+nav li{
+    height: 50px;
+}
+
+nav ul li a.active {
+    background-color: #dda15e;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #606c38;
+    color: black;
+    font-weight: normal;
+    border-radius: 20%;
+}
+
+#current {
+    font-weight: bold;
+    border: dashed 1px black;
+    border-radius: 20%;
+    padding: 10%;
+}
+
+
+.galleries{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 200%;
+    text-align: center;
+} 
+
+h2{
+    font-size: 300%;
+    color:#283618;
+    text-align: center;
+    
+}
+
+h3{
+    font-size: 150%;
+    color: purple;
+}
+
+
+p{
+    line-height: 1.5;
+    color:#000000;
+    padding: .5cm
+}
+
+@media screen and (max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+
+
+/* TWOOOO */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Import */
+body {
+    font-family: 'Playpen Sans', sans-serif;
+}
+
+/* Navigation Bar Styles */
+.navigation {
+    list-style-type: none;
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    justify-content: center;
+}
+
+.navigation li {
+    padding: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Highlight Active Page */
+.active {
+    border-bottom: 2px solid yellow;
+}
+
+/* Skip to Main Content Link - Accessibility */
+a[href=""]:focus {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    visibility: visible;
+}
+
+a[href=""] {
+    visibility: hidden;
+}
+
+/* Responsive Design for Mobile View */
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    /* Hide 'Skip to Main Content' link on mobile */
+    a[href=""] {
+        display: none;
+    }
+}
+
+/* CSS Grid for Specific Pages */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Basic Styling for Text and Sections */
+h1, p {
+    padding: 10px;
+    color: #333;
+}
+
+/* Example of a Grid Item Styling */
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+a[href="#main-content"] {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a[href="#main-content"]:focus {
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+
+/* THREEE */
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header and Navigation Styles */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Active Navigation Link */
+  nav ul li a.active,
+  nav ul li a:hover {
+    border-bottom: 2px solid yellow;
+  }
+  
+  /* Skip to Main Content Link */
+  a[href="#main-content"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  a[href="#main-content"]:focus {
+    position: fixed; /* Make it visible and fixed when focused */
+    left: 10px;
+    top: 10px;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Responsive Grid Layout for Sections */
+  .grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin-top: 20px;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+
+
+
+
+  /* FOURRRR */
+
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #005A9C;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    background: #007BFF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #033C73;
+}
+
+/* Skip to Main Content Link */
+a[href="#main-content"] {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a[href="#main-content"]:focus {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 10000;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+    }
+}
